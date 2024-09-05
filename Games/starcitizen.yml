@@ -19,7 +19,7 @@ Executable:
   
 Steps:
 - action: update_config
-  path: bottle.yml
+  path: "bottle.yml"
   type: yaml
   upd_keys:
     Environment_Variables:
