@@ -25,13 +25,13 @@ Steps:
     Environment_Variables:
       GAMEID: "umu-starcitizen"
       STORE: "none"
-      DXVK_HUD: 0
-      __GL_SHADER_DISK_CACHE: 1
-      __GL_SHADER_DISK_CACHE_SIZE: 1073741824
-      __GL_THREADED_OPTIMIZATIONS: 1
-      EOS_USE_ANTICHEATCLIENTNULL: 1
+      DXVK_HUD: "0"
+      __GL_SHADER_DISK_CACHE: "1"
+      __GL_SHADER_DISK_CACHE_SIZE: "1073741824"
+      __GL_THREADED_OPTIMIZATIONS: "1"
+      EOS_USE_ANTICHEATCLIENTNULL: "1"
       radv_zero_vram: "true"
-      WINE_HIDE_NVIDIA_GPU: 1
+      WINE_HIDE_NVIDIA_GPU: "1"
 - action: install_exe
   file_name: RSI Launcher-Setup-2.0.3.exe
   url: https://install.robertsspaceindustries.com/rel/2/RSI%20Launcher-Setup-2.0.3.exe
