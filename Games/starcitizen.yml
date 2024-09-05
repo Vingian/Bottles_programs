@@ -10,13 +10,27 @@ Parameters:
   dxvk: true
   fsync: true
   discrete_gpu: true
-
+  
+Executable:
+  name: Star Citizen
+  icon: starcitizen.png
+  file: RSI Launcher.exe
+  path: Program Files/Roberts Space Industries/RSI Launcher/RSI Launcher.exe
+  
 Steps:
 - action: update_config
-  path: bottle.yml
+  path: "!bottle_path/bottle.yml"
   type: yaml
   upd_keys:
     Environment_Variables:
+      GAMEID: "umu-starcitizen"
+      STORE: "none"
+      DXVK_HUD: 0
+      __GL_SHADER_DISK_CACHE: 1
+      __GL_SHADER_DISK_CACHE_SIZE: 1073741824
+      __GL_THREADED_OPTIMIZATIONS: 1
+      EOS_USE_ANTICHEATCLIENTNULL: 1
+      radv_zero_vram: "true"
       WINE_HIDE_NVIDIA_GPU: 1
 - action: install_exe
   file_name: RSI Launcher-Setup-2.0.3.exe
