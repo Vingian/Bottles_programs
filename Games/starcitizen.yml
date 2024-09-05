@@ -29,3 +29,9 @@ Steps:
   upd_keys:
     Environment_Variables:
       WINE_HIDE_NVIDIA_GPU: 1
+- action: update_config
+  path: teste.yml
+  type: yaml
+  upd_keys:
+    Environment_Variables:
+      WINE_HIDE_NVIDIA_GPU: 1
